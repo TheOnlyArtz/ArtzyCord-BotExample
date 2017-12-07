@@ -1,0 +1,2 @@
+# ArtzyCord-BotExample
+ArtzyCord Samples
