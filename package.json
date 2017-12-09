@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "artzycord": "0.0.9"
+    "artz.cord": "0.0.1",
+    "moment": "^2.19.3"
   }
 }

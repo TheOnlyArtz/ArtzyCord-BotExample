@@ -2,7 +2,7 @@ const {readdir, readdirSync, readFile} = require('fs');
 class EventEmitter {
   constructor(client) {
     readdir('events', function(err, files) {
-      const EVENTS_PATH = './events/'
+      const EVENTS_PATH = '../events/'
       if (err) throw err;
       if (files) {
         files.forEach(i => {

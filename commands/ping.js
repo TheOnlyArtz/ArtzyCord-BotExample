@@ -1,7 +1,15 @@
-const {EmbedMessage} = require('artzycord');
+const {EmbedMessage} = require('artz.cord');
+
 module.exports.execute = async (client, message, args) => {
-  const Embed = new EmbedMessage();
-  Embed.setColor(0x94DB65);
-  Embed.newDescription('Pong!')
-  message.channel.send(Embed);
+  try {
+    let msg = await message.channel.send('Pinging...');
+    const ping = new Date(msg.createdTimestamp).getTime() - new Date(message.createdTimestamp).getTime();
+
+    const Embed = new EmbedMessage();
+    Embed.setColor(0x94DB65);
+    Embed.newDescription(`Pong! ${ping}ms`);
+    await msg.edit(Embed)
+  } catch (e) {
+    throw e;
+  }
 }

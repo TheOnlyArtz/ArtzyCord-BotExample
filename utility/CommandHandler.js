@@ -1,10 +1,10 @@
 const {readdir, readdirSync, readFile} = require('fs');
-const {Box} = require('artzycord');
+const {Box} = require('artz.cord');
 class CommandHandler {
   constructor(client) {
     client.COMMANDS = new Box;
     readdir('commands', function(err, files) {
-      const COMMANDS_PATH = './commands/'
+      const COMMANDS_PATH = '../commands/'
       if (err) throw err;
       if (files) {
         files.forEach(i => {
