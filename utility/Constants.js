@@ -1,9 +1,9 @@
 module.exports.DefaultClientPresence = {
   presence: {
-    status: 'dnd',
+    status: 'online',
     game: {
-      name: 'Artz.cord',
-      type: 3
+      name: 'With my wolf',
+      type: 0
     }
   }
 }
